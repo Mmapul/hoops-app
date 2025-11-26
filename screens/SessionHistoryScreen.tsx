@@ -4,6 +4,7 @@ import { useRoute, RouteProp } from '@react-navigation/native';
 import { Feather } from '@expo/vector-icons';
 import { ScreenScrollView } from '@/components/ScreenScrollView';
 import { ThemedText } from '@/components/ThemedText';
+import { SocialShareCard } from '@/components/SocialShareCard';
 import { StorageService } from '@/utils/storage';
 import { WorkoutSession } from '@/types';
 import { useTheme } from '@/hooks/useTheme';
@@ -116,6 +117,8 @@ export default function SessionHistoryScreen() {
           </View>
         </>
       ) : null}
+
+      <SocialShareCard session={session} />
     </ScreenScrollView>
   );
 }

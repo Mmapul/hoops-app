@@ -207,6 +207,8 @@ export default function SessionScreen() {
           </ThemedText>
         </View>
 
+        <VideoPlayer videoUrl={currentDrill.videoUrl} drillName={currentDrill.name} />
+
         <View style={styles.controls}>
           <Pressable
             onPress={handlePrevious}

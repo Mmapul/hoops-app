@@ -16,6 +16,7 @@ export const WORKOUTS: Workout[] = [
         reps: 30,
         restSeconds: 30,
         instructions: 'Dribble the ball hard and low with one hand. Keep your eyes up and maintain control.',
+        videoUrl: 'https://www.youtube.com/watch?v=iVK-xPJcPnw',
       },
       {
         id: 'd2',
@@ -24,6 +25,7 @@ export const WORKOUTS: Workout[] = [
         reps: 10,
         restSeconds: 30,
         instructions: 'Weave the ball in a figure 8 pattern through your legs while maintaining a low athletic stance.',
+        videoUrl: 'https://www.youtube.com/watch?v=LYU2Tgv-6pE',
       },
       {
         id: 'd3',
@@ -32,6 +34,7 @@ export const WORKOUTS: Workout[] = [
         reps: 20,
         restSeconds: 45,
         instructions: 'Practice quick crossover dribbles from hand to hand. Stay low and explosive.',
+        videoUrl: 'https://www.youtube.com/watch?v=LlZSkE-Kqzw',
       },
     ],
   },
@@ -50,6 +53,7 @@ export const WORKOUTS: Workout[] = [
         reps: 10,
         restSeconds: 30,
         instructions: 'Stand 3 feet from the basket. Focus on perfect form: elbow in, follow through, backspin.',
+        videoUrl: 'https://www.youtube.com/watch?v=WdB3MqoNZJI',
       },
       {
         id: 'd5',
@@ -58,6 +62,7 @@ export const WORKOUTS: Workout[] = [
         reps: 10,
         restSeconds: 60,
         instructions: 'Develop a consistent free throw routine. Focus on rhythm and follow through.',
+        videoUrl: 'https://www.youtube.com/watch?v=wZLNX0RvL2U',
       },
       {
         id: 'd6',
@@ -66,6 +71,7 @@ export const WORKOUTS: Workout[] = [
         reps: 5,
         restSeconds: 45,
         instructions: 'Shoot from 5 different spots around the key. Focus on square shoulders and arc.',
+        videoUrl: 'https://www.youtube.com/watch?v=b-PbgPmLb74',
       },
     ],
   },
