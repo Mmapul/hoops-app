@@ -1,23 +1,25 @@
 {
   "expo": {
-    "name": "my-app",
-    "slug": "my-app",
+    "name": "Basketball Workout",
+    "slug": "basketball-workout",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/images/icon.png",
-    "scheme": "myapp",
+    "scheme": "basketball-workout",
     "userInterfaceStyle": "automatic",
     "newArchEnabled": true,
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "bundleIdentifier": "com.basketballworkout.app"
     },
     "android": {
       "adaptiveIcon": {
-        "backgroundColor": "#E6F4FE",
+        "backgroundColor": "#FF6B2C",
         "foregroundImage": "./assets/images/android-icon-foreground.png",
         "backgroundImage": "./assets/images/android-icon-background.png",
         "monochromeImage": "./assets/images/android-icon-monochrome.png"
       },
+      "package": "com.basketballworkout.app",
       "edgeToEdgeEnabled": true,
       "predictiveBackGestureEnabled": false
     },

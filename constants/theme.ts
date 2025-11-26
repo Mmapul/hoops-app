@@ -1,30 +1,41 @@
 import { Platform } from "react-native";
 
-const tintColorLight = "#007AFF";
-const tintColorDark = "#0A84FF";
+const primaryOrange = "#FF6B2C";
+const darkCharcoal = "#1A1A1A";
+const courtGreen = "#2D5016";
 
 export const Colors = {
   light: {
-    text: "#11181C",
+    text: darkCharcoal,
     buttonText: "#FFFFFF",
-    tabIconDefault: "#687076",
-    tabIconSelected: tintColorLight,
-    link: "#007AFF",
-    backgroundRoot: "#FFFFFF", // Elevation 0
-    backgroundDefault: "#F2F2F2", // Elevation 1
-    backgroundSecondary: "#E6E6E6", // Elevation 2
-    backgroundTertiary: "#D9D9D9", // Elevation 3
+    tabIconDefault: "#9E9E9E",
+    tabIconSelected: primaryOrange,
+    link: primaryOrange,
+    primary: primaryOrange,
+    success: courtGreen,
+    warning: "#FFA726",
+    error: "#E53935",
+    backgroundRoot: "#FFFFFF",
+    backgroundDefault: "#F5F5F5",
+    backgroundSecondary: "#E0E0E0",
+    backgroundTertiary: "#9E9E9E",
+    border: "#E0E0E0",
   },
   dark: {
     text: "#ECEDEE",
     buttonText: "#FFFFFF",
-    tabIconDefault: "#9BA1A6",
-    tabIconSelected: tintColorDark,
-    link: "#0A84FF",
-    backgroundRoot: "#1F2123", // Elevation 0
-    backgroundDefault: "#2A2C2E", // Elevation 1
-    backgroundSecondary: "#353739", // Elevation 2
-    backgroundTertiary: "#404244", // Elevation 3
+    tabIconDefault: "#9E9E9E",
+    tabIconSelected: primaryOrange,
+    link: primaryOrange,
+    primary: primaryOrange,
+    success: courtGreen,
+    warning: "#FFA726",
+    error: "#E53935",
+    backgroundRoot: darkCharcoal,
+    backgroundDefault: "#2A2C2E",
+    backgroundSecondary: "#353739",
+    backgroundTertiary: "#404244",
+    border: "#404244",
   },
 };
 
@@ -33,13 +44,10 @@ export const Spacing = {
   sm: 8,
   md: 12,
   lg: 16,
-  xl: 20,
-  "2xl": 24,
-  "3xl": 32,
-  "4xl": 40,
-  "5xl": 48,
+  xl: 24,
+  xxl: 32,
   inputHeight: 48,
-  buttonHeight: 52,
+  buttonHeight: 48,
 };
 
 export const BorderRadius = {
@@ -54,40 +62,25 @@ export const BorderRadius = {
 };
 
 export const Typography = {
-  h1: {
-    fontSize: 32,
-    lineHeight: 40,
+  display: {
+    fontSize: 34,
     fontWeight: "700" as const,
   },
-  h2: {
-    fontSize: 28,
-    lineHeight: 36,
-    fontWeight: "700" as const,
-  },
-  h3: {
+  headline: {
     fontSize: 24,
-    lineHeight: 32,
-    fontWeight: "600" as const,
-  },
-  h4: {
-    fontSize: 20,
-    lineHeight: 28,
     fontWeight: "600" as const,
   },
   body: {
     fontSize: 16,
-    lineHeight: 24,
     fontWeight: "400" as const,
   },
-  small: {
+  caption: {
     fontSize: 14,
-    lineHeight: 20,
     fontWeight: "400" as const,
   },
-  link: {
+  button: {
     fontSize: 16,
-    lineHeight: 24,
-    fontWeight: "400" as const,
+    fontWeight: "600" as const,
   },
 };
 

@@ -59,11 +59,11 @@ export function ErrorFallback({ error, resetError }: ErrorFallbackProps) {
 
       <View style={styles.content}>
         <ThemedText type="h1" style={styles.title}>
-          Something went wrong
+          Turnover!
         </ThemedText>
 
         <ThemedText type="body" style={styles.message}>
-          Please reload the app to continue.
+          Basketball Workout encountered an error. Let's get back in the game.
         </ThemedText>
 
         <Pressable
@@ -81,7 +81,7 @@ export function ErrorFallback({ error, resetError }: ErrorFallbackProps) {
             type="body"
             style={[styles.buttonText, { color: theme.buttonText }]}
           >
-            Try Again
+            Reset & Continue
           </ThemedText>
         </Pressable>
       </View>
@@ -150,7 +150,7 @@ const styles = StyleSheet.create({
     height: "100%",
     justifyContent: "center",
     alignItems: "center",
-    padding: Spacing["2xl"],
+    padding: Spacing.xl,
   },
   content: {
     alignItems: "center",
@@ -170,7 +170,7 @@ const styles = StyleSheet.create({
   },
   topButton: {
     position: "absolute",
-    top: Spacing["2xl"] + Spacing.lg,
+    top: Spacing.xxl + Spacing.lg,
     right: Spacing.lg,
     width: 44,
     height: 44,
@@ -183,7 +183,7 @@ const styles = StyleSheet.create({
   button: {
     paddingVertical: Spacing.lg,
     borderRadius: BorderRadius.md,
-    paddingHorizontal: Spacing["2xl"],
+    paddingHorizontal: Spacing.xl,
     minWidth: 200,
     shadowColor: "#000",
     shadowOffset: {
