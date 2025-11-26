@@ -7,6 +7,7 @@ import { useSafeAreaInsets } from 'react-native-safe-area-context';
 import { ThemedText } from '@/components/ThemedText';
 import { Button } from '@/components/Button';
 import { ScreenKeyboardAwareScrollView } from '@/components/ScreenKeyboardAwareScrollView';
+import { VideoPlayer } from '@/components/VideoPlayer';
 import { useWorkout } from '@/contexts/WorkoutContext';
 import { StorageService } from '@/utils/storage';
 import { useTheme } from '@/hooks/useTheme';
@@ -67,6 +68,7 @@ export default function SessionScreen() {
 
   const currentDrill = activeWorkout?.drills[currentDrillIndex];
   const completedCount = completedDrills.filter(d => d.completed).length;
+  const [showVideo, setShowVideo] = useState(false);
 
   const handleNext = () => {
     if (!activeWorkout) return;

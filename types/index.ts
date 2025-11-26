@@ -8,6 +8,7 @@ export interface Drill {
   reps: number;
   restSeconds: number;
   instructions: string;
+  videoUrl?: string;
 }
 
 export interface Workout {
@@ -37,6 +38,7 @@ export interface WorkoutSession {
   completedDrills: CompletedDrill[];
   notes?: string;
   difficulty?: number;
+  isShared?: boolean;
 }
 
 export interface UserProfile {
