@@ -30,10 +30,12 @@ export function VideoPlayer({ videoUrl, drillName }: VideoPlayerProps) {
       if (canOpen) {
         await Linking.openURL(videoUrl);
       } else {
-        Alert.alert('Cannot open video', 'Unable to open the video URL');
+        // Fallback for web or if direct URL fails
+        window.open(videoUrl, '_blank');
       }
     } catch {
-      Alert.alert('Error', 'Failed to open video');
+      // Final fallback
+      window.open(videoUrl, '_blank');
     } finally {
       setIsLoading(false);
     }
